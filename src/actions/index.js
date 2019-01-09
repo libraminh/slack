@@ -20,3 +20,26 @@ export const setCurrentChannel = channel => {
     currentChannel: channel
   }
 }
+
+export const setPrivateChannel = isPrivateChannel => {
+  return { 
+    type: actionTypes.SET_PRIVATE_CHANNEL,
+    isPrivateChannel
+  }
+}
+
+export const setUserPosts = userPosts => {
+  return {
+    type: actionTypes.SET_USER_POSTS,
+    userPosts
+  }
+}
+
+// Colors Actions
+export const setColors = (primaryColor, secondaryColor) => {
+  return {
+    type: actionTypes.SET_COLORS,
+    primaryColor,
+    secondaryColor
+  }
+}
